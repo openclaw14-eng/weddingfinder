@@ -1,8 +1,15 @@
 import json
 import requests
+import re
 
 url = "https://gqlprwursgbgkfkwzkyb.supabase.co"
 key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxbHByd3Vyc2diZ2tma3d6a3liIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MDc1NzEzNSwiZXhwIjoyMDg2MzMzMTM1fQ.Nv1_gzB0Q5PrdiBO9Bn1CwQCLXh5BsivrG22HbN6wqU"
+
+def slugify(s):
+    s = s.lower()
+    s = re.sub(r'[^a-z0-9\s-]', '', s)
+    s = re.sub(r'[\s-]+', '-', s).strip('-')
+    return s
 
 def push_to_supabase(table, data):
     headers = {
@@ -23,10 +30,12 @@ def sync_all():
         
         to_sync = []
         for v in detailed:
-            # Minimalist mapping: name, city, image_url, description, website
+            name = v.get('name', 'Onbekende Leverancier')
+            city = v.get('city', 'Nederland')
             sync_item = {
-                "name": v.get('name', 'Onbekende Leverancier'),
-                "city": v.get('city', 'Nederland'),
+                "name": name,
+                "city": city,
+                "slug": f"{slugify(name)}-{slugify(city)}",
                 "image_url": v.get('image_url') or "https://images.unsplash.com/photo-1519167758481-83f550bb49b3",
                 "description": v.get('description', 'Hoogwaardige leverancier voor jullie bruiloft.'),
                 "website": v.get('url', '#')
