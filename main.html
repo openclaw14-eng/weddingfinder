@@ -104,22 +104,9 @@
         console.log('--- DB BOOTSTRAP V7.6.2 ---');
         const supabaseUrl = 'https://gqlprwursgbgkfkwzkyb.supabase.co';
         const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxbHByd3Vyc2diZ2tma3d6a3liIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MDc1NzEzNSwiZXhwIjoyMDg2MzMzMTM1fQ.Nv1_gzB0Q5PrdiBO9Bn1CwQCLXh5BsivrG22HbN6wqU';
-        
-        async function fetchWithRetry(retries = 3) {
-            const spb = supabase.createClient(supabaseUrl, supabaseKey);
-            for(let i=0; i<retries; i++) {
-                console.log(`Fetch attempt ${i+1}...`);
-                const { data, error } = await spb.from('vendors').select('*').limit(20);
-                if (!error && data) return data;
-                await new Promise(r => setTimeout(r, 1000));
-            }
-            throw new Error('Supabase unreachable after retries');
-        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
-        const supabaseUrl = 'https://gqlprwursgbgkfkwzkyb.supabase.co';
-        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxbHByd3Vyc2diZ2tma3d6a3liIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MDc1NzEzNSwiZXhwIjoyMDg2MzMzMTM1fQ.Nv1_gzB0Q5PrdiBO9Bn1CwQCLXh5BsivrG22HbN6wqU';
         let allVenues = [], displayVenues = [], currentFilter = 'all';
 
         const placeHolderImgs = [
