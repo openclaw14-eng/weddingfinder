@@ -23,11 +23,10 @@ def sync_all():
         
         to_sync = []
         for v in detailed:
-            # Strictly use verified columns: name, city, province, image_url, description, website
+            # Minimalist mapping: name, city, image_url, description, website
             sync_item = {
                 "name": v.get('name', 'Onbekende Leverancier'),
                 "city": v.get('city', 'Nederland'),
-                "province": v.get('state', 'NL'),
                 "image_url": v.get('image_url') or "https://images.unsplash.com/photo-1519167758481-83f550bb49b3",
                 "description": v.get('description', 'Hoogwaardige leverancier voor jullie bruiloft.'),
                 "website": v.get('url', '#')
