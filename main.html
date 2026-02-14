@@ -193,6 +193,8 @@
         function openDetail(id) {
             const v = allVenues.find(x => x.id === id);
             if(!v) return;
+            
+            // Fix: ensure the image URL in modal is the same as the validated one from the card
             const img = (v.image_url && v.image_url.startsWith('http')) ? v.image_url : fallbackImgs[allVenues.indexOf(v) % fallbackImgs.length];
             
             const website = v.website ? v.website : '#';
