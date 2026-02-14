@@ -1,0 +1,20 @@
+{
+  "agent_id": "agent_research_c56ed5a96e46",
+  "task_id": "c56ed5a96e46",
+  "status": "completed",
+  "timestamp": "2026-02-13T09:06:23.656541",
+  "message": "Task completed in 3.01s",
+  "progress": null,
+  "result": {
+    "sources_checked": 5,
+    "key_findings": [
+      "Finding 1",
+      "Finding 2",
+      "Finding 3"
+    ],
+    "research_topic": "Analyze current state of AI agent frameworks and orchestration tools.\nCompare at least 5 different a",
+    "report_length": "medium"
+  },
+  "error": null,
+  "metadata": null
+}

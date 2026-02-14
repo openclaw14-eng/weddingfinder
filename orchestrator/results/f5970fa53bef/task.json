@@ -1,0 +1,13 @@
+{
+  "id": "f5970fa53bef",
+  "type": "research",
+  "description": "Research the latest developments in Python asynchronous programming patterns.\nFocus on:\n- asyncio best practices\n- structured concurrency\n- modern async frameworks",
+  "status": "assigned",
+  "created_at": "2026-02-13T09:06:20.520966",
+  "assigned_to": "agent_research_f5970fa53bef",
+  "started_at": "2026-02-13T09:06:20.522429",
+  "completed_at": null,
+  "result": null,
+  "error": null,
+  "retry_count": 0
+}

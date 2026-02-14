@@ -1,0 +1,81 @@
+{
+  "tasks": [
+    {
+      "id": "ea851d7f26",
+      "desc": "Research wedding vendor SEO keywords for Amsterdam region",
+      "agent": "seo-specialist",
+      "status": "completed",
+      "created": "2026-02-13T10:40:20.787408",
+      "started": "2026-02-13T10:40:20.793463",
+      "completed": "2026-02-13T12:03:45.710969",
+      "result_summary": "Research complete: 20 keywords identified"
+    },
+    {
+      "id": "773274f4bf",
+      "desc": "Build React Native component for vendor profile cards",
+      "agent": "frontend-dev",
+      "status": "assigned",
+      "created": "2026-02-13T10:40:20.787847",
+      "started": "2026-02-13T10:40:20.794955",
+      "completed": null
+    },
+    {
+      "id": "abf7d6bf72",
+      "desc": "Scrape trouwlocaties from theperfectwedding.nl - first 20 venues",
+      "agent": "scraper-agent",
+      "status": "completed",
+      "created": "2026-02-13T10:40:20.788183",
+      "started": "2026-02-13T10:40:20.796341",
+      "completed": "2026-02-13T11:05:33.751848",
+      "result_summary": "Scraped 20 venues from theperfectwedding.nl"
+    },
+    {
+      "id": "63842a10ba",
+      "desc": "Write blog post: \"Top 10 Trouwlocaties in Amsterdam 2026\"",
+      "agent": "content-writer",
+      "status": "completed",
+      "created": "2026-02-13T10:40:20.788548",
+      "started": "2026-02-13T10:40:20.798007",
+      "completed": "2026-02-13T11:05:34.037983",
+      "result_summary": "Wrote blog post: Top 10 Trouwlocaties Amsterdam"
+    },
+    {
+      "id": "c01128ed1e",
+      "desc": "Design wireframes for vendor booking flow",
+      "agent": "ux-designer",
+      "status": "assigned",
+      "created": "2026-02-13T10:40:20.788865",
+      "started": "2026-02-13T10:40:20.799530",
+      "completed": null
+    },
+    {
+      "id": "d6ac366b87",
+      "desc": "Set up Supabase table for vendor reviews",
+      "agent": "backend-dev",
+      "status": "completed",
+      "created": "2026-02-13T10:40:20.789405",
+      "started": "2026-02-13T10:40:20.800958",
+      "completed": "2026-02-13T12:04:18.846709",
+      "result_summary": "Reviews table schema created"
+    },
+    {
+      "id": "8a835940b1",
+      "desc": "Create outreach email template for photographers",
+      "agent": "lead-generator",
+      "status": "assigned",
+      "created": "2026-02-13T10:40:20.789759",
+      "started": "2026-02-13T10:40:20.802404",
+      "completed": null
+    },
+    {
+      "id": "3674aaa7b4",
+      "desc": "Optimize Netlify build pipeline for faster deploys",
+      "agent": "devops-engineer",
+      "status": "completed",
+      "created": "2026-02-13T10:40:20.790075",
+      "started": "2026-02-13T10:40:20.803921",
+      "completed": "2026-02-13T12:13:31.642871",
+      "result_summary": "Blog deployed successfully to Netlify"
+    }
+  ]
+}

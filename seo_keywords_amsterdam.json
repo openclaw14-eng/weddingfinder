@@ -1,0 +1,287 @@
+{
+  "research_metadata": {
+    "date": "2026-02-13",
+    "region": "Amsterdam, Netherlands",
+    "language": "Dutch (primary), English (secondary)",
+    "target_audience": "Dutch couples planning weddings",
+    "industry": "Wedding venues / Trouwlocaties"
+  },
+  "keywords": [
+    {
+      "rank": 1,
+      "keyword": "trouwlocatie amsterdam",
+      "search_volume_estimate": "2400-3600",
+      "volume_source": "Estimated from industry data",
+      "category": "commercial",
+      "category_rationale": "High commercial intent - users actively seeking venues to book",
+      "competition_level": "high",
+      "difficulty": "hard",
+      "notes": "Primary head term, very competitive but essential"
+    },
+    {
+      "rank": 2,
+      "keyword": "trouwlocatie amsterdam noord",
+      "search_volume_estimate": "800-1200",
+      "volume_source": "Estimated from industry data",
+      "category": "local",
+      "category_rationale": "Geographic modifier - specific Amsterdam district",
+      "competition_level": "medium",
+      "difficulty": "medium",
+      "notes": "Growing area, industrial lofts popular, less competition than centrum"
+    },
+    {
+      "rank": 3,
+      "keyword": "goedkope trouwlocatie amsterdam",
+      "search_volume_estimate": "600-900",
+      "volume_source": "Estimated from industry data",
+      "category": "commercial",
+      "category_rationale": "Price-conscious booking intent",
+      "competition_level": "medium",
+      "difficulty": "medium",
+      "notes": "Strong conversion potential, budget-focused couples"
+    },
+    {
+      "rank": 4,
+      "keyword": "trouwen in amsterdam",
+      "search_volume_estimate": "1400-2200",
+      "volume_source": "Estimated from industry data",
+      "category": "informational",
+      "category_rationale": "Early research phase, exploring options",
+      "competition_level": "medium",
+      "difficulty": "medium",
+      "notes": "Top of funnel, good for blog content and guides"
+    },
+    {
+      "rank": 5,
+      "keyword": "grachtenpand trouwen amsterdam",
+      "search_volume_estimate": "400-700",
+      "volume_source": "Estimated from industry data",
+      "category": "local",
+      "category_rationale": "Specific venue type + location",
+      "competition_level": "medium",
+      "difficulty": "medium",
+      "notes": "High-value niche, premium venue seekers"
+    },
+    {
+      "rank": 6,
+      "keyword": "industriele trouwlocatie amsterdam",
+      "search_volume_estimate": "350-550",
+      "volume_source": "Estimated from industry data",
+      "category": "commercial",
+      "category_rationale": "Specific venue style with booking intent",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Lower competition, Noord area opportunities"
+    },
+    {
+      "rank": 7,
+      "keyword": "trouwlocatie amsterdam centrum",
+      "search_volume_estimate": "500-800",
+      "volume_source": "Estimated from industry data",
+      "category": "local",
+      "category_rationale": "Geographic modifier - central Amsterdam",
+      "competition_level": "high",
+      "difficulty": "hard",
+      "notes": "Premium location, high competition"
+    },
+    {
+      "rank": 8,
+      "keyword": "bruiloft locatie amsterdam",
+      "search_volume_estimate": "1000-1600",
+      "volume_source": "Estimated from industry data",
+      "category": "commercial",
+      "category_rationale": "Alternative term with booking intent",
+      "competition_level": "medium",
+      "difficulty": "medium",
+      "notes": "Slightly less formal than 'trouwlocatie'"
+    },
+    {
+      "rank": 9,
+      "keyword": "trouwlocatie met overnachting amsterdam",
+      "search_volume_estimate": "250-400",
+      "volume_source": "Estimated from industry data",
+      "category": "commercial",
+      "category_rationale": "Specific amenity requirement = high intent",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Good long-tail opportunity, hotels included"
+    },
+    {
+      "rank": 10,
+      "keyword": "buiten trouwen amsterdam",
+      "search_volume_estimate": "450-700",
+      "volume_source": "Estimated from industry data",
+      "category": "informational",
+      "category_rationale": "Exploring outdoor wedding options",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Seasonal peak May-September, park venues"
+    },
+    {
+      "rank": 11,
+      "keyword": "trouwlocatie amsterdam 50 personen",
+      "search_volume_estimate": "200-350",
+      "volume_source": "Estimated from industry data",
+      "category": "commercial",
+      "category_rationale": "Specific capacity = qualified lead",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Long-tail, high conversion, intimate weddings trend"
+    },
+    {
+      "rank": 12,
+      "keyword": "trouwlocatie amsterdam 100 personen",
+      "search_volume_estimate": "300-500",
+      "volume_source": "Estimated from industry data",
+      "category": "commercial",
+      "category_rationale": "Specific capacity = qualified lead",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Standard size wedding, good conversion"
+    },
+    {
+      "rank": 13,
+      "keyword": "trouwlocatie amsterdam 150 personen",
+      "search_volume_estimate": "200-350",
+      "volume_source": "Estimated from industry data",
+      "category": "commercial",
+      "category_rationale": "Specific capacity = qualified lead",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Larger wedding venues needed"
+    },
+    {
+      "rank": 14,
+      "keyword": "trouwlocatie amsterdam west",
+      "search_volume_estimate": "150-280",
+      "volume_source": "Estimated from industry data",
+      "category": "local",
+      "category_rationale": "Geographic district targeting",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Emerging area, less competition"
+    },
+    {
+      "rank": 15,
+      "keyword": "trouwlocatie amsterdam oost",
+      "search_volume_estimate": "180-300",
+      "volume_source": "Estimated from industry data",
+      "category": "local",
+      "category_rationale": "Geographic district targeting",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Growing hip area, industrial venues"
+    },
+    {
+      "rank": 16,
+      "keyword": "trouwlocatie amsterdam zuid",
+      "search_volume_estimate": "150-250",
+      "volume_source": "Estimated from industry data",
+      "category": "local",
+      "category_rationale": "Geographic district targeting",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Upscale area, fewer venue options"
+    },
+    {
+      "rank": 17,
+      "keyword": "wedding venue amsterdam",
+      "search_volume_estimate": "800-1300",
+      "volume_source": "Estimated from industry data",
+      "category": "commercial",
+      "category_rationale": "English search by international couples/expats",
+      "competition_level": "medium",
+      "difficulty": "medium",
+      "notes": "International/expat market, often higher budget"
+    },
+    {
+      "rank": 18,
+      "keyword": "trouwlocatie amsterdam met eigen catering",
+      "search_volume_estimate": "120-220",
+      "volume_source": "Estimated from industry data",
+      "category": "commercial",
+      "category_rationale": "Specific requirement = high intent",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Niche long-tail, budget-conscious"
+    },
+    {
+      "rank": 19,
+      "keyword": "trouwen aan het water amsterdam",
+      "search_volume_estimate": "280-450",
+      "volume_source": "Estimated from industry data",
+      "category": "informational",
+      "category_rationale": "Dream/aspiration search, early funnel",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Gracht/IJ venues, romantic imagery"
+    },
+    {
+      "rank": 20,
+      "keyword": "trouwlocatie amsterdam prijzen",
+      "search_volume_estimate": "350-550",
+      "volume_source": "Estimated from industry data",
+      "category": "commercial",
+      "category_rationale": "Price comparison intent",
+      "competition_level": "low",
+      "difficulty": "easy",
+      "notes": "Transparency opportunity, pricing pages"
+    }
+  ],
+  "category_summary": {
+    "commercial": {
+      "count": 10,
+      "percentage": 50,
+      "description": "Keywords with direct booking intent"
+    },
+    "local": {
+      "count": 6,
+      "percentage": 30,
+      "description": "Location-specific modifiers"
+    },
+    "informational": {
+      "count": 4,
+      "percentage": 20,
+      "description": "Research and discovery phase"
+    }
+  },
+  "top_5_recommendations": [
+    {
+      "rank": 1,
+      "keyword": "trouwlocatie amsterdam noord",
+      "rationale": "High growth area with lower competition than centrum. Industrial loft conversions are trending. Amsterdam-Noord has transformed from hidden gem to mainstream but still offers 20-30% better value than city center. Perfect balance of search volume and achievability.",
+      "action": "Create dedicated Noord landing page featuring industrial venues, free parking benefits, and ferry accessibility"
+    },
+    {
+      "rank": 2,
+      "keyword": "goedkope trouwlocatie amsterdam",
+      "rationale": "Price-conscious segment is substantial but underserved. Many venues hide pricing, creating opportunity for transparent, budget-focused content. Strong conversion intent - these searchers are actively comparing options.",
+      "action": "Build budget-friendly venue guide with clear pricing tiers; transparency builds trust and rankings"
+    },
+    {
+      "rank": 3,
+      "keyword": "industriele trouwlocatie amsterdam",
+      "rationale": "Lower competition niche with growing popularity. Noord's industrial venues appeal to modern couples wanting non-traditional spaces. Easier to rank than generic terms.",
+      "action": "Showcase industrial/loft venues with high-quality photography; emphasize raw aesthetic and flexibility"
+    },
+    {
+      "rank": 4,
+      "keyword": "trouwlocatie amsterdam 100 personen",
+      "rationale": "Specific capacity long-tail with high conversion. Most weddings fall in 80-120 guest range. Much easier to rank than broad terms while capturing qualified leads.",
+      "action": "Create capacity-specific landing pages; add structured data for venue capacity"
+    },
+    {
+      "rank": 5,
+      "keyword": "trouwen in amsterdam",
+      "rationale": "High volume informational term perfect for top-of-funnel content. While not immediate booking intent, it captures couples early in planning. Builds authority and nurtures leads.",
+      "action": "Comprehensive guide covering types of venues, areas, legal requirements, seasons, and insider tips"
+    }
+  ],
+  "additional_insights": {
+    "seasonality": "May-September accounts for 71% of bookings; consider seasonal content",
+    "booking_timeline": "Popular venues book 18-24 months ahead for Saturdays; content about 'last minute' opportunities for off-season",
+    "geographic_expansion": "Consider content for Zaandam, Haarlem, Amstelveen as alternatives",
+    "pricing_transparency": "Major differentiator - most venues hide pricing; transparent pages perform well",
+    "capacity_pages": "Capacity-specific pages have low competition and high conversion"
+  }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rimi Intelligence - Kanban Board</title>
+    <style>
+        :root {
+            --primary: #e91e63;
+            --secondary: #ff6090;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .column {
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 16px;
+            padding: 20px;
+            min-height: 500px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .column-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: default;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-color: var(--primary);
+        }
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-top: 10px;
+            background: rgba(233, 30, 99, 0.1);
+            color: var(--primary);
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        .dot-todo { background: #64748b; }
+        .dot-progress { background: #2196f3; box-shadow: 0 0 10px #2196f3; }
+        .dot-done { background: #4caf50; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 id="dashboard-title">Rimi Intelligence</h1>
+        <div id="update-time" style="color: var(--text-muted)">Project: The Perfect Wedding Portal</div>
+    </div>
+
+    <div class="board">
+        <!-- LIVE STATS -->
+        <div class="column" style="grid-column: span 3; min-height: auto; display: flex; gap: 20px; margin-bottom: 20px; background: none; border: none;">
+            <div class="card" style="flex: 1; margin-bottom: 0;">
+                <div class="card-title" style="color: var(--primary)">Leveranciers</div>
+                <div id="stat-vendors" style="font-size: 2rem; font-weight: bold;">0</div>
+            </div>
+            <div class="card" style="flex: 1; margin-bottom: 0;">
+                <div class="card-title" style="color: #4caf50">Leads (Revenue)</div>
+                <div id="stat-leads" style="font-size: 2rem; font-weight: bold;">€0.00</div>
+            </div>
+            <div class="card" style="flex: 1; margin-bottom: 0;">
+                <div class="card-title" style="color: #2196f3">SEO Coverage</div>
+                <div id="stat-seo" style="font-size: 2rem; font-weight: bold;">0%</div>
+            </div>
+        </div>
+
+        <!-- SCRAPER PROGRESS BAR -->
+        <div class="column" style="grid-column: span 3; min-height: auto; margin-bottom: 20px;">
+            <div class="card-title" style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 10px;">LIVE SCRAPER STATUS: <span id="scraper-msg">Bezig...</span></div>
+            <div style="width: 100%; height: 10px; background: #334155; border-radius: 5px; overflow: hidden;">
+                <div id="scraper-bar" style="width: 0%; height: 100%; background: var(--primary); transition: width 0.5s;"></div>
+            </div>
+        </div>
+        <!-- BACKLOG -->
+        <div class="column">
+            <div class="column-title">
+                <div class="status-dot dot-todo"></div> BACKLOG
+            </div>
+            <div class="card">
+                <div class="card-title">Partner Dashboard</div>
+                <div class="card-desc">Portal waar leveranciers hun eigen profiel kunnen beheren tegen betaling.</div>
+                <div class="tag">MONETIZATION</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Stripe Integratie</div>
+                <div class="card-desc">Automatische facturatie voor premium listings en leads.</div>
+                <div class="tag">PAYMENT</div>
+            </div>
+        </div>
+
+        <!-- IN PROGRESS -->
+        <div class="column">
+            <div class="column-title">
+                <div class="status-dot dot-progress"></div> IN PROGRESS
+            </div>
+            <div class="card">
+                <div class="card-title">Massa Scraper 3.0</div>
+                <div class="card-desc">Honderden pagina's scrapen en direct opslaan in Supabase.</div>
+                <div class="tag">DATA</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Expo App Build</div>
+                <div class="card-desc">Web en mobiele interface live zetten op poort 3002.</div>
+                <div class="tag">FRONTEND</div>
+            </div>
+        </div>
+
+        <!-- DONE -->
+        <div class="column">
+            <div class="column-title">
+                <div class="status-dot dot-done"></div> VOLTOOID
+            </div>
+            <div class="card">
+                <div class="card-title">Database Setup</div>
+                <div class="card-desc">Supabase infrastructuur met custom SQL execution.</div>
+                <div class="tag">BACKEND</div>
+            </div>
+            <div class="card">
+                <div class="card-title">SEO Agent</div>
+                <div class="card-desc">Automatische Google optimalisatie voor alle listings.</div>
+                <div class="tag">MARKETING</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Lead Tracking</div>
+                <div class="card-desc">Klik-registratie systeem voor directe inkomstenmeting.</div>
+                <div class="tag">REVENUE</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

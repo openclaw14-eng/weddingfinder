@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weddingfinder - Vind Jouw Perfecte Trouwlocatie</title>
+  <meta name="description" content="Ontdek de mooiste trouwlocaties in Nederland. Filter op stijl, capaciteit en budget.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <i class="fas fa-heart"></i>
+        <span>Weddingfinder</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#venues" class="nav-link">Locaties</a></li>
+        <li><a href="#favorites" class="nav-link">Favorieten <span class="fav-badge" id="favBadge">0</span></a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Vind Jouw <span class="text-accent">Perfecte</span> Trouwlocatie</h1>
+      <p class="hero-subtitle">Ontdek de mooiste locaties voor jouw speciale dag in Nederland</p>
+      
+      <!-- Search Bar -->
+      <div class="search-box">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" 
+               class="search-input" 
+               id="searchInput" 
+               placeholder="Zoek op naam of plaats..."
+               autocomplete="off">
+        <button class="search-btn" id="searchBtn">Zoeken</button>
+      </div>
+      
+      <!-- Quick Stats -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" id="totalVenues">8</span>
+          <span class="stat-label">Locaties</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">7</span>
+          <span class="stat-label">Provincies</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Trouwkoppels</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="floating-heart"><i class="fas fa-heart"></i></div>
+      <div class="floating-heart"><i class="fas fa-heart"></i></div>
+      <div class="floating-heart"><i class="fas fa-heart"></i></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Filter Section -->
+    <section class="filter-section" id="venues">
+      <div class="container">
+        <h2 class="section-title">Filter Op Jouw Wensen</h2>
+        
+        <!-- Filter Chips -->
+        <div class="filter-chips">
+          <button class="filter-chip active" data-filter="all">Alle Locaties</button>
+          <button class="filter-chip" data-filter="Castle">Kasteel</button>
+          <button class="filter-chip" data-filter="Historic">Historisch</button>
+          <button class="filter-chip" data-filter="Beach">Strand</button>
+          <button class="filter-chip" data-filter="Nature">Natuur</button>
+          <button class="filter-chip" data-filter="Urban">Stedelijk</button>
+          <button class="filter-chip" data-filter="Rustic">Landelijk</button>
+          <button class="filter-chip" data-filter="Luxury">Luxe</button>
+          <button class="filter-chip" data-filter="Modern">Modern</button>
+        </div>
+        
+        <!-- Advanced Filters -->
+        <div class="advanced-filters">
+          <div class="filter-group">
+            <label class="filter-label">
+              <i class="fas fa-users"></i> Capaciteit
+            </label>
+            <select class="filter-select" id="capacityFilter">
+              <option value="all">Alle groottes</option>
+              <option value="intimate">Intiem (10-50)</option>
+              <option value="medium">Middel (50-100)</option>
+              <option value="large">Groot (100-200)</option>
+              <option value="grand">Groots (200+)</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label class="filter-label">
+              <i class="fas fa-euro-sign"></i> Budget
+            </label>
+            <select class="filter-select" id="budgetFilter">
+              <option value="all">Alle budgetten</option>
+              <option value="budget">Budget (&lt; €5.000)</option>
+              <option value="mid">Middel (€5.000 - €10.000)</option>
+              <option value="premium">Premium (&gt; €10.000)</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label class="filter-label">
+              <i class="fas fa-sort"></i> Sorteer
+            </label>
+            <select class="filter-select" id="sortFilter">
+              <option value="featured">Aanbevolen</option>
+              <option value="rating">Beste beoordeling</option>
+              <option value="price-low">Prijs: laag - hoog</option>
+              <option value="price-high">Prijs: hoog - laag</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Active Filters -->
+        <div class="active-filters" id="activeFilters"></div>
+      </div>
+    </section>
+
+    <!-- Venues Grid -->
+    <section class="venues-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Beschikbare Locaties</h2>
+          <span class="results-count" id="resultsCount">8 locaties gevonden</span>
+        </div>
+        
+        <div class="venues-grid" id="venuesGrid">
+          <!-- Venues will be rendered here by JavaScript -->
+        </div>
+        
+        <!-- No Results State -->
+        <div class="no-results" id="noResults" style="display: none;">
+          <i class="fas fa-search no-results-icon"></i>
+          <h3>Geen locaties gevonden</h3>
+          <p>Probeer andere filters of zoektermen</p>
+          <button class="btn btn-primary" id="resetFilters">Filters Resetten</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Favorites Section -->
+    <section class="favorites-section" id="favorites">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Mijn Favorieten</h2>
+          <span class="results-count" id="favCount">0 opgeslagen</span>
+        </div>
+        
+        <div class="favorites-grid" id="favoritesGrid">
+          <!-- Favorite venues will be rendered here -->
+        </div>
+        
+        <div class="empty-favorites" id="emptyFavorites">
+          <i class="fas fa-heart empty-fav-icon"></i>
+          <h3>Nog geen favorieten</h3>
+          <p>Klik op het hartje bij een locatie om deze toe te voegen aan je favorieten</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2 class="section-title">Meer Informatie?</h2>
+            <p class="contact-text">
+              Laat je gegevens achter en wij helpen je graag bij het vinden van de perfecte trouwlocatie.
+            </p>
+            <ul class="contact-benefits">
+              <li><i class="fas fa-check"></i> Persoonlijk advies</li>
+              <li><i class="fas fa-check"></i> Exclusieve deals</li>
+              <li><i class="fas fa-check"></i> Gratis brochure</li>
+            </ul>
+          </div>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Naam</label>
+              <input type="text" id="name" name="name" required placeholder="Jouw naam">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="jouw@email.nl">
+            </div>
+            <div class="form-group">
+              <label for="weddingDate">Trouwdatum</label>
+              <input type="date" id="weddingDate" name="weddingDate">
+            </div>
+            <div class="form-group">
+              <label for="guests">Aantal gasten</label>
+              <select id="guests" name="guests">
+                <option value="">Selecteer...</option>
+                <option value="20-50">20-50</option>
+                <option value="50-100">50-100</option>
+                <option value="100-150">100-150</option>
+                <option value="150+">150+</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Verstuur
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <i class="fas fa-heart"></i>
+            <span>Weddingfinder</span>
+          </a>
+          <p class="footer-tagline">Vind jouw perfecte trouwlocatie</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Locaties</h4>
+            <ul>
+              <li><a href="#">Kastelen</a></li>
+              <li><a href="#">Strandlocaties</a></li>
+              <li><a href="#">Landgoederen</a></li>
+              <li><a href="#">Stadszalen</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Service</h4>
+            <ul>
+              <li><a href="#">Hoe het werkt</a></li>
+              <li><a href="#">Prijsindicatie</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Volg Ons</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Weddingfinder. Alle rechten voorbehouden.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle toast-icon"></i>
+    <span class="toast-message" id="toastMessage"></span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

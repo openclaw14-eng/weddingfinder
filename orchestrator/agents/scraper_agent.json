@@ -1,0 +1,37 @@
+{
+  "name": "Scraper Agent",
+  "version": "1.0.0",
+  "type": "scraper",
+  "handler_type": "scrape",
+  "description": "Agent for web scraping and data collection tasks",
+  "capabilities": [
+    "web_scraping",
+    "data_extraction",
+    "html_parsing",
+    "api_fetching",
+    "content_crawling"
+  ],
+  "config": {
+    "max_retries": 3,
+    "timeout_seconds": 30,
+    "rate_limit": 1.0,
+    "user_agent": "OrchestratorScraperBot/1.0",
+    "respect_robots_txt": true,
+    "max_depth": 2,
+    "max_pages": 50
+  },
+  "steps": [
+    "validate_target",
+    "fetch_content",
+    "parse_html",
+    "extract_data",
+    "structure_output",
+    "save_results"
+  ],
+  "output_formats": ["json", "csv", "markdown"],
+  "resources": {
+    "max_memory_mb": 512,
+    "max_disk_mb": 100,
+    "max_runtime_minutes": 60
+  }
+}

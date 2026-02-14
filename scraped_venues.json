@@ -1,0 +1,345 @@
+{
+  "total_scraped": 20,
+  "venues": [
+    {
+      "id": 2812,
+      "name": "Kasteel Woerden",
+      "city": "Woerden",
+      "state": "Utrecht",
+      "zipcode": "3441BZ",
+      "country": "Nederland",
+      "averageWeddingPrice": 9050,
+      "rating": 9.6,
+      "ratingCount": 62,
+      "url": "https://www.theperfectwedding.nl/bedrijven/2812/kasteel-woerden",
+      "slug": "kasteel-woerden",
+      "location": {
+        "lat": 52.0850691,
+        "lon": 4.88784
+      }
+    },
+    {
+      "id": 18550,
+      "name": "Grand Café Borg Nienoord",
+      "city": "Leek",
+      "state": "Groningen",
+      "zipcode": "9351AC",
+      "country": "Nederland",
+      "averageWeddingPrice": 4920,
+      "rating": 9.7,
+      "ratingCount": 67,
+      "url": "https://www.theperfectwedding.nl/bedrijven/18550/grand-cafe-borg-nienoord",
+      "slug": "grand-cafe-borg-nienoord",
+      "location": {
+        "lat": 53.1679828,
+        "lon": 6.394235
+      }
+    },
+    {
+      "id": 11863,
+      "name": "Grand Café El Molino",
+      "city": "Schoondijke",
+      "state": "Zeeland",
+      "zipcode": "4507KR",
+      "country": "Nederland",
+      "averageWeddingPrice": 5931,
+      "rating": 10,
+      "ratingCount": 10,
+      "url": "https://www.theperfectwedding.nl/bedrijven/11863/grand-cafe-el-molino",
+      "slug": "grand-cafe-el-molino",
+      "location": {
+        "lat": 51.3512612,
+        "lon": 3.5490748
+      }
+    },
+    {
+      "id": 11956,
+      "name": "De Schildhoeve",
+      "city": "Fluitenberg",
+      "state": "Drenthe",
+      "zipcode": "7931PA",
+      "country": "Nederland",
+      "averageWeddingPrice": 0,
+      "rating": 9.9,
+      "ratingCount": 17,
+      "url": "https://www.theperfectwedding.nl/bedrijven/11956/de-schildhoeve",
+      "slug": "de-schildhoeve",
+      "location": {
+        "lat": 52.7352541,
+        "lon": 6.4471522
+      }
+    },
+    {
+      "id": 13855,
+      "name": "Slot Moermond",
+      "city": "Renesse",
+      "state": "Zeeland",
+      "zipcode": "4325BC",
+      "country": "Nederland",
+      "averageWeddingPrice": 8425,
+      "rating": 9.2,
+      "ratingCount": 21,
+      "url": "https://www.theperfectwedding.nl/bedrijven/13855/slot-moermond",
+      "slug": "slot-moermond",
+      "location": {
+        "lat": 51.7329789,
+        "lon": 3.7833055
+      }
+    },
+    {
+      "id": 224,
+      "name": "Kasteel Wijenburg",
+      "city": "Echteld",
+      "state": "Gelderland",
+      "zipcode": "4054MX",
+      "country": "Nederland",
+      "averageWeddingPrice": 13450,
+      "rating": 9.8,
+      "ratingCount": 96,
+      "url": "https://www.theperfectwedding.nl/bedrijven/224/kasteel-wijenburg",
+      "slug": "kasteel-wijenburg",
+      "location": {
+        "lat": 51.9093651,
+        "lon": 5.5001791
+      }
+    },
+    {
+      "id": 14242,
+      "name": "Plok",
+      "city": "Didam",
+      "state": "Gelderland",
+      "zipcode": "6942GD",
+      "country": "Nederland",
+      "averageWeddingPrice": 6060,
+      "rating": 10,
+      "ratingCount": 103,
+      "url": "https://www.theperfectwedding.nl/bedrijven/14242/plok",
+      "slug": "plok",
+      "location": {
+        "lat": 51.9261621,
+        "lon": 6.1328967
+      }
+    },
+    {
+      "id": 12482,
+      "name": "Het Brabantse Land",
+      "city": "Giessen",
+      "state": "Noord-Brabant",
+      "zipcode": "4283GM",
+      "country": "Nederland",
+      "averageWeddingPrice": 5613,
+      "rating": 9.8,
+      "ratingCount": 13,
+      "url": "https://www.theperfectwedding.nl/bedrijven/12482/het-brabantse-land",
+      "slug": "het-brabantse-land",
+      "location": {
+        "lat": 51.7938546,
+        "lon": 5.0288335
+      }
+    },
+    {
+      "id": 2368,
+      "name": "Deining aan Zee",
+      "city": "Castricum",
+      "state": "Noord-Holland",
+      "zipcode": "1901NZ",
+      "country": "Nederland",
+      "averageWeddingPrice": 6968,
+      "rating": 9.5,
+      "ratingCount": 11,
+      "url": "https://www.theperfectwedding.nl/bedrijven/2368/deining-zee",
+      "slug": "deining-zee",
+      "location": {
+        "lat": 52.5575473,
+        "lon": 4.6094313
+      }
+    },
+    {
+      "id": 2868,
+      "name": "Haarlemmermeerstation",
+      "city": "Amsterdam",
+      "state": "Noord-Holland",
+      "zipcode": "1075XV",
+      "country": "Nederland",
+      "averageWeddingPrice": 9200,
+      "rating": 9.5,
+      "ratingCount": 22,
+      "url": "https://www.theperfectwedding.nl/bedrijven/2868/haarlemmermeerstation",
+      "slug": "haarlemmermeerstation",
+      "location": {
+        "lat": 52.35041,
+        "lon": 4.85657
+      }
+    },
+    {
+      "id": 281166,
+      "name": "Brasserie de Laegt",
+      "city": "Almkerk",
+      "state": "Noord-Brabant",
+      "zipcode": "4286 LV",
+      "country": "Nederland",
+      "averageWeddingPrice": 0,
+      "rating": 10,
+      "ratingCount": 4,
+      "url": "https://www.theperfectwedding.nl/bedrijven/281166/brasserie-laegt",
+      "slug": "brasserie-laegt",
+      "location": {
+        "lat": 51.7749689,
+        "lon": 4.9824883
+      }
+    },
+    {
+      "id": 239098,
+      "name": "Delbrock",
+      "city": "Maastricht",
+      "state": "Limburg",
+      "zipcode": "6222AE",
+      "country": "Nederland",
+      "averageWeddingPrice": 9110,
+      "rating": 9,
+      "ratingCount": 2,
+      "url": "https://www.theperfectwedding.nl/bedrijven/239098/delbrock",
+      "slug": "delbrock",
+      "location": {
+        "lat": 50.8691927,
+        "lon": 5.7199156
+      }
+    },
+    {
+      "id": 41398,
+      "name": "Hotel Marktstad",
+      "city": "Schagen",
+      "state": "Noord-Holland",
+      "zipcode": "1741BS",
+      "country": "Nederland",
+      "averageWeddingPrice": 4160,
+      "rating": 9.8,
+      "ratingCount": 2,
+      "url": "https://www.theperfectwedding.nl/bedrijven/41398/hotel-marktstad",
+      "slug": "hotel-marktstad",
+      "location": {
+        "lat": 52.7861852,
+        "lon": 4.7965492
+      }
+    },
+    {
+      "id": 8426,
+      "name": "Strandpaviljoen Thalassa",
+      "city": "Zandvoort",
+      "state": "Noord-Holland",
+      "zipcode": "2041KB",
+      "country": "Nederland",
+      "averageWeddingPrice": 6055,
+      "rating": 10,
+      "ratingCount": 1,
+      "url": "https://www.theperfectwedding.nl/bedrijven/8426/strandpaviljoen-thalassa",
+      "slug": "strandpaviljoen-thalassa",
+      "location": {
+        "lat": 52.3711487,
+        "lon": 4.533355
+      }
+    },
+    {
+      "id": 13405,
+      "name": "Het Ruiterhuys",
+      "city": "Castricum",
+      "state": "Noord-Holland",
+      "zipcode": "1901MC",
+      "country": "Nederland",
+      "averageWeddingPrice": 7806,
+      "rating": 9.2,
+      "ratingCount": 18,
+      "url": "https://www.theperfectwedding.nl/bedrijven/13405/het-ruiterhuys",
+      "slug": "het-ruiterhuys",
+      "location": {
+        "lat": 52.5713825,
+        "lon": 4.6539198
+      }
+    },
+    {
+      "id": 15122,
+      "name": "Landgoed Klarenbeek",
+      "city": "Klarenbeek",
+      "state": "Gelderland",
+      "zipcode": "7382BP",
+      "country": "Nederland",
+      "averageWeddingPrice": 10895,
+      "rating": 9.8,
+      "ratingCount": 38,
+      "url": "https://www.theperfectwedding.nl/bedrijven/15122/landgoed-klarenbeek",
+      "slug": "landgoed-klarenbeek",
+      "location": {
+        "lat": 52.1627077,
+        "lon": 6.0779116
+      }
+    },
+    {
+      "id": 5532,
+      "name": "Lambertuskerk Raamsdonk",
+      "city": "Raamsdonk",
+      "state": "Noord-Brabant",
+      "zipcode": "4944VB",
+      "country": "Nederland",
+      "averageWeddingPrice": 4790,
+      "rating": 8,
+      "ratingCount": 4,
+      "url": "https://www.theperfectwedding.nl/bedrijven/5532/lambertuskerk-raamsdonk",
+      "slug": "lambertuskerk-raamsdonk",
+      "location": {
+        "lat": 51.69226,
+        "lon": 4.89221
+      }
+    },
+    {
+      "id": 2661,
+      "name": "Slot Doddendael",
+      "city": "Ewijk",
+      "state": "Gelderland",
+      "zipcode": "6644KD",
+      "country": "Nederland",
+      "averageWeddingPrice": 9206,
+      "rating": 9.6,
+      "ratingCount": 46,
+      "url": "https://www.theperfectwedding.nl/bedrijven/2661/slot-doddendael",
+      "slug": "slot-doddendael",
+      "location": {
+        "lat": 51.8742614,
+        "lon": 5.7475197
+      }
+    },
+    {
+      "id": 2430,
+      "name": "Het Kasteel van Rhoon",
+      "city": "Rhoon",
+      "state": "Zuid-Holland",
+      "zipcode": "3161KD",
+      "country": "Nederland",
+      "averageWeddingPrice": 7075,
+      "rating": 9.6,
+      "ratingCount": 13,
+      "url": "https://www.theperfectwedding.nl/bedrijven/2430/het-kasteel-rhoon",
+      "slug": "het-kasteel-rhoon",
+      "location": {
+        "lat": 51.85992,
+        "lon": 4.41786
+      }
+    },
+    {
+      "id": 5229,
+      "name": "Abel. Grand café restaurant",
+      "city": "Poortugaal",
+      "state": "Zuid-Holland",
+      "zipcode": "3172XB",
+      "country": "Nederland",
+      "averageWeddingPrice": 6206,
+      "rating": 9.5,
+      "ratingCount": 86,
+      "url": "https://www.theperfectwedding.nl/bedrijven/5229/abel-grand-cafe-restaurant",
+      "slug": "abel-grand-cafe-restaurant",
+      "location": {
+        "lat": 51.8444391,
+        "lon": 4.421868
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "agent_id": "agent_research_f5970fa53bef",
+  "task_id": "f5970fa53bef",
+  "status": "completed",
+  "timestamp": "2026-02-13T09:06:23.652640",
+  "message": "Task completed in 3.01s",
+  "progress": null,
+  "result": {
+    "sources_checked": 5,
+    "key_findings": [
+      "Finding 1",
+      "Finding 2",
+      "Finding 3"
+    ],
+    "research_topic": "Research the latest developments in Python asynchronous programming patterns.\nFocus on:\n- asyncio be",
+    "report_length": "medium"
+  },
+  "error": null,
+  "metadata": null
+}

@@ -1,0 +1,13 @@
+{
+  "id": "e198092ed4eb",
+  "type": "code",
+  "description": "Create a Python utility module for parsing and validating JSON configuration files.\nRequirements:\n- Support nested config structures\n- Include schema validation\n- Provide helpful error messages\n- Add type hints throughout",
+  "status": "assigned",
+  "created_at": "2026-02-13T09:06:20.521324",
+  "assigned_to": "agent_code_e198092ed4eb",
+  "started_at": "2026-02-13T09:06:20.531108",
+  "completed_at": null,
+  "result": null,
+  "error": null,
+  "retry_count": 0
+}

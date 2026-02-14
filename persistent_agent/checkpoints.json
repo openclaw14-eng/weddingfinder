@@ -1,0 +1,17 @@
+{
+    "heartbeat": {
+        "last_run": null,
+        "status": "PENDING",
+        "data": {}
+    },
+    "scraper": {
+        "last_run": null,
+        "status": "PENDING",
+        "data": {}
+    },
+    "seo_agent": {
+        "last_run": null,
+        "status": "PENDING",
+        "data": {}
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Research Agent",
+  "version": "1.0.0",
+  "type": "research",
+  "handler_type": "research",
+  "description": "Agent for web research, information gathering, and analysis tasks",
+  "capabilities": [
+    "web_search",
+    "information_synthesis",
+    "fact_checking",
+    "source_evaluation",
+    "report_generation",
+    "trend_analysis"
+  ],
+  "config": {
+    "max_sources": 10,
+    "search_depth": "medium",
+    "verify_facts": true,
+    "include_citations": true,
+    "output_format": "markdown",
+    "language": "en"
+  },
+  "search_providers": [
+    "brave",
+    "google",
+    "bing",
+    "duckduckgo"
+  ],
+  "resources": {
+    "max_memory_mb": 512,
+    "max_disk_mb": 50,
+    "max_runtime_minutes": 45
+  }
+}
