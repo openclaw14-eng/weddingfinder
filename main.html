@@ -49,9 +49,9 @@
     </header>
 
     <!-- High-end Search & Filters Section -->
-    <div class="bg-gray-50 border-b border-gray-100 py-8 md:py-16">
+    <div class="bg-gray-50 border-b border-gray-100 py-4 md:py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-6 md:mb-10 tracking-tighter">Vind jullie droomlocatie</h2>
+            <h2 class="text-2xl md:text-5xl font-black text-gray-900 mb-4 md:mb-10 tracking-tighter">Vind jullie droomlocatie</h2>
             
             <!-- Pro Search Bar -->
             <div class="max-w-2xl mx-auto mb-8">
@@ -132,10 +132,13 @@
 
         async function init() {
             try {
+                console.log("Fetching vendors...");
                 const spb = supabase.createClient(supabaseUrl, supabaseKey);
-                const { data, error } = await spb.from('vendors').select('*');
+                // Fetch all to ensure we have data for initial render
+                const { data, error } = await spb.from('vendors').select('*').order('created_at', { ascending: false });
                 if (error) throw error;
                 
+                console.log("Data received:", data?.length);
                 allVenues = (data || []).map(v => {
                     // Try to extract capacity from description or fallback
                     let cap = '200';
@@ -168,7 +171,6 @@
             if(btn) {
                 btn.classList.add('active-filter');
             } else {
-                // Fallback to find button by onclick if btn ref is missing
                 const allBtns = document.querySelectorAll('.filter-btn');
                 allBtns.forEach(b => {
                     if (b.getAttribute('onclick').includes(`'${f}'`)) b.classList.add('active-filter');
@@ -180,13 +182,11 @@
         function applyFilters() {
             const city = document.getElementById('citySearch').value.trim().toLowerCase();
             
-            // Start searching only after 3 characters, unless the field is cleared
-            if (city.length > 0 && city.length < 3) return;
-
             displayVenues = allVenues.filter(v => {
                 const cityName = (v.city || '').toLowerCase();
                 const vendorName = (v.name || '').toLowerCase();
                 const cityMatch = !city || cityName.includes(city) || vendorName.includes(city);
+                
                 let filterMatch = true;
                 if (currentFilter === 'hotel') filterMatch = v.overnachting === 'Ja';
                 if (currentFilter === 'catering') filterMatch = v.catering === 'Eigen catering';
