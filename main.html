@@ -195,16 +195,42 @@
             if(!v) return;
             const img = (v.image_url && v.image_url.startsWith('http')) ? v.image_url : fallbackImgs[allVenues.indexOf(v) % fallbackImgs.length];
             
+            const website = v.website ? v.website : '#';
+            const websiteBtn = v.website ? `<a href="${v.website}" target="_blank" class="flex-1 bg-pink-600 text-white py-4 rounded-2xl font-black uppercase tracking-widest text-center hover:bg-pink-700 transition shadow-xl">Bekijk Website</a>` : '';
+
             document.getElementById('modalContent').innerHTML = `
                 <div class="flex flex-col lg:flex-row min-h-[60vh]">
-                    <div class="lg:w-1/2 h-80 lg:h-auto">
+                    <div class="lg:w-1/2 h-80 lg:h-auto sticky top-0">
                         <img src="${img}" class="w-full h-full object-cover">
                     </div>
-                    <div class="lg:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-                        <h2 class="text-4xl font-black text-gray-900 mb-2">${v.name}</h2>
-                        <p class="text-pink-600 font-bold mb-6 italic">${v.city || 'Nederland'}</p>
-                        <p class="text-gray-600 leading-relaxed mb-8">${v.description || 'Een unieke trouwlocatie voor een onvergetelijke dag. Neem vrijblijvend contact op voor meer informatie.'}</p>
-                        <button class="bg-black text-white py-4 rounded-2xl font-black uppercase tracking-widest hover:bg-pink-600 transition shadow-xl mt-auto">Vrijblijvende Offerte</button>
+                    <div class="lg:w-1/2 p-8 md:p-12 flex flex-col">
+                        <div class="mb-8">
+                            <span class="text-pink-600 font-black uppercase tracking-widest text-[10px]">${v.category !== 'uncategorized' ? v.category : 'Trouwlocatie'}</span>
+                            <h2 class="text-4xl font-black text-gray-900 mt-2 mb-2 leading-tight">${v.name}</h2>
+                            <p class="flex items-center text-gray-500 font-bold italic">
+                                <i class="fa-solid fa-location-dot mr-2 text-pink-600"></i>${v.city || 'Nederland'}
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="bg-gray-50 p-4 rounded-2xl">
+                                <p class="text-[10px] font-black uppercase text-gray-400 mb-1">Capaciteit</p>
+                                <p class="font-bold text-gray-900">${v.capacity || 'Op aanvraag'}</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-2xl">
+                                <p class="text-[10px] font-black uppercase text-gray-400 mb-1">Catering</p>
+                                <p class="font-bold text-gray-900 truncate">${v.catering || 'Beschikbaar'}</p>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-pink mb-10">
+                            <p class="text-gray-600 leading-relaxed">${v.description || 'Een unieke trouwlocatie voor een onvergetelijke dag. Neem vrijblijvend contact op voor meer informatie over de mogelijkheden op deze locatie.'}</p>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4 mt-auto">
+                            ${websiteBtn}
+                            <button onclick="window.location.href='mailto:info@weddingfinder.nl?subject=Informatie aanvraag: ${v.name}'" class="flex-1 bg-black text-white py-4 rounded-2xl font-black uppercase tracking-widest hover:bg-gray-800 transition shadow-xl">Contact Opnemen</button>
+                        </div>
                     </div>
                 </div>
             `;
