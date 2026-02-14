@@ -38,7 +38,7 @@
 
     <!-- Minimal Header -->
     <header class="bg-white border-b border-gray-100 sticky top-0 z-50 w-full">
-        <div class="fixed top-20 right-4 z-[60] bg-black text-white text-[8px] px-2 py-1 rounded-full font-bold opacity-50">V7.6.1-LIVE</div>
+        <div class="fixed top-20 right-4 z-[60] bg-black text-white text-[8px] px-2 py-1 rounded-full font-bold opacity-50">V7.6.3-BOOTSTRAP</div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex justify-between items-center">
             <h1 class="text-xl md:text-2xl font-black tracking-tight cursor-pointer" onclick="location.reload()">WEDDING<span class="text-pink-600">FINDER</span></h1>
             <div class="flex items-center gap-3 md:gap-6">
@@ -100,13 +100,11 @@
         </div>
     </div>
 
-    <script>
-        console.log('--- DB BOOTSTRAP V7.6.2 ---');
-        const supabaseUrl = 'https://gqlprwursgbgkfkwzkyb.supabase.co';
-        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxbHByd3Vyc2diZ2tma3d6a3liIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MDc1NzEzNSwiZXhwIjoyMDg2MzMzMTM1fQ.Nv1_gzB0Q5PrdiBO9Bn1CwQCLXh5BsivrG22HbN6wqU';
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
+        console.log('--- DB BOOTSTRAP V7.6.3 ---');
+        const supabaseUrl = 'https://gqlprwursgbgkfkwzkyb.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxbHByd3Vyc2diZ2tma3d6a3liIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MDc1NzEzNSwiZXhwIjoyMDg2MzMzMTM1fQ.Nv1_gzB0Q5PrdiBO9Bn1CwQCLXh5BsivrG22HbN6wqU';
         let allVenues = [], displayVenues = [], currentFilter = 'all';
 
         const placeHolderImgs = [
