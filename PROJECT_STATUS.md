@@ -3,33 +3,20 @@
 
 ## ✅ WAT IS AF
 
-### Website (Live)
-- **URL:** https://stately-rugelach-726964.netlify.app/
-- **Status:** Werkend, laadt venues vanuit Supabase
+### Website (Live - GitHub Pages)
+- **URL:** https://openclaw14-eng.github.io/weddingfinder
+- **Status:** V8.0.11 Live, verbonden met Supabase
 - **Features:**
-  - 170+ trouwlocaties uit database
-  - Zoeken en filteren (Kasteel, Landgoed, Strand, etc.)
-  - Favorieten systeem (localStorage)
-  - Blog sectie met artikelen
-  - Responsive design
-  - Contact formulier
+  - 500+ trouwlocaties uit database (Massa Scrape voltooid)
+  - V8 Search-as-you-type (Client-side Power)
+  - Story-driven Filter & Trust-Check Markers
+  - Responsive design (Mobile First)
+  - Premium Modal System (Converting)
 
 ### Multi-Agent Systeem
-- **11 agents** geconfigureerd en werkend:
-  - seo-specialist
-  - frontend-dev
-  - backend-dev
-  - scraper-agent
-  - content-writer
-  - ux-designer
-  - lead-generator
-  - devops-engineer
-  - business-developer
-  - marketing-lead
-  - ceo-weddingfinder
-
-- **Orchestrator:** Draait op achtergrond, delegeert taken
-- **Auto-complete:** Agents rapporteren zelf hun voortgang
+- **11 agents** geconfigureerd en werkend onder CEO Rimi:
+  - seo-specialist, frontend-dev, backend-dev, scraper-agent, ux-designer, etc.
+- **Orchestrator:** Beheert de V8 pipeline en deployment.
 
 ### Data & Content
 - **20 venues** gescraped van theperfectwedding.nl
@@ -63,10 +50,10 @@
 3. Juiste agent wordt toegewezen
 4. Agent voert uit en rapporteert compleet
 
-### Website updaten:
-1. Wijzig files in `WeddingfinderApp/public/`
-2. `git add . && git commit -m "..." && git push`
-3. Netlify deployt automatisch (~1 minuut)
+### Website updaten (V8 Pipeline):
+1. Wijzig files in `WeddingfinderV2/` of root (main.html)
+2. `git add . && git commit -m "V8.0.11 update" && git push`
+3. GitHub Pages deployt automatisch.
 
 ### Agents starten:
 ```bash

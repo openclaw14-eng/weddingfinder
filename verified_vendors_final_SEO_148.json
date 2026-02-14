@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Huize Frankendael",
+    "slug": "huize-frankendael-396b04e7",
+    "city": "Amsterdam",
+    "description": "Ervaar de tijdloze elegantie van Huize Frankendael, de laatst overgebleven 17e-eeuwse buitenplaats van Amsterdam. Deze unieke trouwlocatie in Amsterdam-Oost biedt een betoverend decor waar historie en moderne luxe vloeien. Van een romantische ceremonie in de 18e-eeuwse salons of de weelderige stijltuinen tot een sfeervol diner in het rustieke koetshuis: jullie volledige huwelijksdag vindt hier een prachtig onderkomen. De culinaire invulling wordt met passie verzorgd door Restaurant Merkelbach, waar de Slow Food filosofie en authentieke smaken centraal staan. Of jullie nu dromen van een intieme receptie in de buitenlucht of een exclusief feest op een historisch landgoed, Huize Frankendael transformeert jullie bruiloft tot een onvergetelijke belevenis.",
+    "image_url": "https://images.unsplash.com/photo-1519225495045-1b8823b214e9?q=80&w=1200&auto=format&fit=crop",
+    "category": "classic",
+    "website": "https://huizefrankendael.nl/",
+    "capacity": "150",
+    "catering": "In-house (Restaurant Merkelbach)"
+  },
+  {
+    "name": "Hotel The Dylan",
+    "slug": "hotel-the-dylan-bc88ffc9",
+    "city": "Amsterdam",
+    "description": "Verscholen achter een historische poort aan de Keizersgracht ligt Hotel The Dylan, een icoon van ingetogen luxe en verfijnd design. Dit exclusieve boutique hotel biedt een intieme en stijlvolle setting voor een onvergetelijke Amsterdamse bruiloft. Met de prachtige binnentuin als verborgen juweel en de karaktervolle stijlkamers, is The Dylan de perfecte keuze voor bruidsparen die zoeken naar privacy en topgastronomie. De culinaire ervaring wordt naar het hoogste niveau getild door de keuken van het met een Michelin-ster bekroonde Restaurant Vinkeles. Van een chique receptie tot een gastronomisch diner, elke huwelijksdag bij The Dylan wordt gekenmerkt door persoonlijke service en een ongekende aandacht voor detail.",
+    "image_url": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop",
+    "category": "hotel",
+    "website": "https://www.dylanamsterdam.com/",
+    "capacity": "100",
+    "catering": "In-house (Restaurant Vinkeles)"
+  }
+]
