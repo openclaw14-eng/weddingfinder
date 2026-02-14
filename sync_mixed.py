@@ -12,6 +12,8 @@ def push_to_supabase(table, data):
         "Prefer": "resolution=merge-duplicates"
     }
     r = requests.post(f"{url}/rest/v1/{table}", headers=headers, json=data)
+    if r.status_code >= 400:
+        print(f"Error {r.status_code}: {r.text}")
     return r.status_code
 
 def sync_all():
@@ -21,29 +23,18 @@ def sync_all():
         
         to_sync = []
         for v in detailed:
-            v_name = v.get('name', 'Onbekende Leverancier')
-            v_city = v.get('city', 'Nederland')
-            v_type = (v.get('type') or '').lower()
-            v_desc = v.get('description') or f"Hoogwaardige {v_type or 'leverancier'} voor jullie bruiloft."
-            
-            if 'photography' in v_name.lower() or 'photo' in v_type:
-                v_desc += " Professionele bruidsfotografie."
-            if 'video' in v_name.lower() or 'video' in v_type:
-                v_desc += " Prachtige trouwvideo's."
-
+            # Strictly use verified columns: name, city, province, image_url, description, website
             sync_item = {
-                "name": v_name,
-                "city": v_city,
+                "name": v.get('name', 'Onbekende Leverancier'),
+                "city": v.get('city', 'Nederland'),
                 "province": v.get('state', 'NL'),
-                "image_url": v.get('image_url') or f"https://source.unsplash.com/featured/?wedding,{v_type or 'vendor'}",
-                "description": v_desc,
-                "website": v.get('url', '#'),
-                "capacity": str(v.get('capacity', 'N/A')),
-                "catering": v.get('catering', 'N/A')
+                "image_url": v.get('image_url') or "https://images.unsplash.com/photo-1519167758481-83f550bb49b3",
+                "description": v.get('description', 'Hoogwaardige leverancier voor jullie bruiloft.'),
+                "website": v.get('url', '#')
             }
             to_sync.append(sync_item)
             
-        print(f"Syncing {len(to_sync)} mixed vendors to Supabase...")
+        print(f"Syncing {len(to_sync)} items...")
         batch_size = 50
         for i in range(0, len(to_sync), batch_size):
             batch = to_sync[i:i+batch_size]
