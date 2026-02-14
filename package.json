@@ -1,0 +1,10 @@
+{
+  "name": "weddingfinder",
+  "version": "1.0.0",
+  "description": "Vind de perfecte trouwlocatie.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {}
+}
